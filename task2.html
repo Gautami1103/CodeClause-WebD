@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login with Firebase</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <style>
+        *
+        {
+            background-color:darkorchid;
+        }
+        img
+        {
+            width: 1920px;
+            height: 990px
+        }
+        h1
+        {
+            background-color: gold;
+            width: 100%;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .class
+        {
+            overflow: hidden;
+            margin: top 13px ;
+            padding: 15px;
+        }
+        p
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            font-weight: bold;
+            -webkit-text-fill-color:aqua;
+        }
+        button
+        {
+            border-style:bold;
+            width: 225px;
+            font: italic;
+        }
+        button:hover
+        {
+            background-color: gold;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login with Firebase</h1>
+    
+    <!-- Add login buttons -->
+    <div class="class" id= "b1">
+        <p>Google:   </p><button  onclick="googleLogin()">Login with Google</button><br>
+    </div>
+    <div class="class" id= "b2">
+        <p>Facebook:   </p><button id= "b2" onclick="facebookLogin()">Login with Facebook</button><br>
+    </div>
+    <div class="class" id= "b1">
+        <p>Github:   </p><button id= "b3" onclick="githubLogin()">Login with GitHub</button><br>
+    </div>
+    <!-- <div class="class" id= "b1">
+        </p><button id= "b4" onclick="otpLogin()">Login with OTP</button><br>
+    </div> -->
+    
+           
+
+    <!-- Add Firebase configuration -->
+    <script src="firebase-config.js"></script>
+
+    <!-- Include your JavaScript code -->
+    <script src="auth.js"></script>
+</body>
+</html>

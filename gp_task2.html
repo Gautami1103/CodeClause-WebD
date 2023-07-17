@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Form</title>
+  <style>
+    /* *
+    {
+        background-color: aquamarine;
+    } */
+    body 
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    .container 
+    {
+        background-color: aquamarine;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      /* background-color: #fff; */
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      width: 750px
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select 
+    {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 750px;
+    }
+
+    .button-container 
+    {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .button-container button 
+    {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button-container button[type="reset"] 
+    {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="fathername">Father's Name:</label>
+      <input type="text" id="fathername" name="fathername">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <label for="cpassword">Confirm Password:</label>
+      <input type="password" id="cpassword" name="cpassword">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills">
+
+      <label for="college">College:</label>
+      <input type="text" id="college" name="college">
+
+      <label for="degree">Degree:</label>
+      <input type="text" id="degree" name="degree">
+
+      <label for="linkedln">LinkedIn Link:</label>
+      <input type="text" id="linkedln" name="linkedln">
+
+      <label for="github">GitHub Link:</label>
+      <input type="text" id="github" name="github">
+
+      <label for="hackerrnk">HackerRank Link:</label>
+      <input type="text" id="hackerrnk" name="hackerrnk">
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact">
+
+      <label for="experience">Experience:</label>
+      <input type="text" id="experience" name="experience">
+
+      <div class="button-container">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
